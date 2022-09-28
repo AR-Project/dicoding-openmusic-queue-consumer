@@ -8,10 +8,10 @@ class Listener {
 
   async listen(message) {
     try {
-      // parse message sent from main APP
+      // parse message sent from server app
       const { playlistId, targetEmail } = JSON.parse(message.content.toString());
 
-      // fetch all data needed via PlaylistService
+      // fetch all data needed from db via /PlaylistService
       const playlist = await this._playlistsService.getPlaylistByPlaylistId(playlistId);
 
       // pass data from PlaylistsService to mail sender

@@ -28,7 +28,7 @@ class MailSender {
       ],
     };
 
-    // at the same time, return(end method) and pass message to nodemailer via transporter
+    // return(end current method) and at the same time, pass message via nodemailer/transporter
     return this._transporter.sendMail(message);
   }
 }

@@ -6,7 +6,7 @@ class PlaylistsService {
   }
 
   async getPlaylistByPlaylistId(playlistId) {
-    // prep FIRST query: Per requirement, first step needs id, name from playlists
+    // prep FIRST query: Per challenge requirement, first step needs id, name from playlists
     //    search playlist using playlistId
     const query = {
       text: `SELECT id, name 
