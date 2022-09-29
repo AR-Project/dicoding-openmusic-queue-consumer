@@ -19,7 +19,7 @@ const init = async () => {
   await channel.assertQueue('export:playlist', {
     durable: true,
   });
-
+  console.log('OpenMusic Queue Consumer is listening...');
   // fetch message from queue that being sent from main server
   channel.consume('export:playlist', listener.listen, { noAck: true });
 };

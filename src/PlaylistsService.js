@@ -34,9 +34,6 @@ class PlaylistsService {
     // merge songResult rows inside playlistResult object property
     playlistResult.rows[0].songs = songsResult.rows;
 
-    // merge songResult rows inside playlistResult object property
-    playlistResult.rows[0].songs = songsResult.rows;
-
     // return playlistResult with songsResult contained
     return playlistResult.rows[0];
   }
